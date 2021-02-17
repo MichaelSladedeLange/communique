@@ -18,7 +18,7 @@ body{
 .Welcomeanimation{
   position: relative;
   height: 70px;
-  width:300px;
+  width:320px;
   background-color: white;
   margin: 0 auto 0 auto;
   top: 50%;
@@ -44,10 +44,10 @@ body{
   width: 600px;
   background-color: black;
   left:-600px;
-  animation: LEFT 3s ease 2s forwards;
+  animation: LEFT 2.2s ease-in-out 2s forwards;
 }
 @keyframes LEFT {
-  from{transform: translate(-10px);}
+  from{transform: translate(0);}
     to{transform: translate(1000px);}
 }
 .blockthree{
@@ -61,7 +61,7 @@ body{
 }
 @keyframes RIGHT {
   from{transform: translate(0);}
-    to{transform: translate(-900px);}
+    to{transform: translate(-920px);}
 }
 .blockfour{
   position: absolute;
@@ -103,6 +103,7 @@ animation: text1 0.1s linear 4.7s forwards;
 }
 .text3::first-letter{
   color: #bbbbbb;
+  font-weight: bold;
 }
 
 @keyframes text {
@@ -114,11 +115,130 @@ animation: text1 0.1s linear 4.7s forwards;
 from{opacity: 0;}
 to{opacity: 1;}
 }
+.icon1{
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-top: 20px;
+}
+.icon2{
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-top: 20px;
+}
+.Section1{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.Head{
+  position: relative;
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+.aboutheading1{
+  color: white;
+  font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
+    margin:0;
+}
+.aboutheading2{
+  color: black;
+  font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
+    margin:0;
+}
+.underline1{
+  position: absolute;
+  height: 2px;
+  width:200px;
+  bottom: 0;
+  background: #bbbbbb;
+  animation: side 5s ease-in-out infinite alternate;
+}
+.underline2{
+  position: absolute;
+  height: 2px;
+  width:200px;
+  bottom: 0;
+  background: black;
+  animation: side 5s ease-in-out infinite alternate;
+}
+@keyframes side {
+ from{transform: translate(-190px);}
+ to{transform: translate(290px);}
+}
+.aboutheading::first-letter{
+  color:#bbbbbb;
+  font-weight: bold;
+}
+.aboutusinfo{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 500px;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.Section2{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding-bottom: 20px;
+}
+.flexbox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 20px;
+}
+.head2{
+  color: black;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  text-decoration: overline;
+}
+.cont1{
+  text-align: center;
+}
+.cont2{
+  text-align: center;
+}
+.listitem{
+  color: black;
+  font-size: 1.2rem;
+  font-family: "Quicksand", sans-serif;
+  margin:5px;
+  text-align: left;
+}
+.listitem::before{
+  content: " - "
+}
+
+
+
+
 
 
 @media (max-width:800px) {
-.Welcomeanimation{
-  height: 70px;
-  width: 300px;
-}
+  .aboutusinfo{
+    width:85%;
+  }
+  .cont1{
+    width: 90%;
+  }
+  .cont2{
+    width: 90%;
+  }
 }
