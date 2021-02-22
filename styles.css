@@ -13,6 +13,7 @@ body{
   height: 100%;
   width: 100%;
   background-color: white;
+  text-align: center;
   overflow: hidden;
 }
 .Welcomeanimation{
@@ -114,6 +115,37 @@ animation: text1 0.1s linear 4.7s forwards;
 @keyframes text1 {
 from{opacity: 0;}
 to{opacity: 1;}
+}
+.location{
+  position: absolute;
+  font-size: 1rem;
+  color: black;
+  top: 50px;
+  right: 50px;
+  font-family: "Quicksand", sans-serif;
+  animation: location 1s ease-in 6s forwards;
+  opacity: 0;
+}
+@keyframes location {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+.arrow{
+  position: absolute;
+  margin: 0 auto 0 auto;
+  bottom: 100px;
+  height: 100px;
+  width:100px;
+  left: 50%;
+  transform: translate(-50px);
+  background-color: #bbbbbb;
+  clip-path: polygon(54% 91%, 100% 49%, 100% 60%, 55% 100%, 0 61%, 0 50%);
+  animation: fadeinarrow 1s ease-in-out 6s 4 forwards;
+  opacity: 0;
+}
+@keyframes fadeinarrow {
+  from{opacity: 0;}
+  to{opacity: 1;}
 }
 .icon1{
   height: 100px;
@@ -481,5 +513,9 @@ to{opacity: 1;}
   }
   .cont2{
     width: 90%;
+  }
+  .location{
+    top: 20px;
+    right: 20px
   }
 }
