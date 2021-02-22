@@ -139,7 +139,7 @@ to{opacity: 1;}
   left: 50%;
   transform: translate(-50px);
   background-color: #bbbbbb;
-  clip-path: polygon(54% 91%, 100% 49%, 100% 60%, 55% 100%, 0 61%, 0 50%);
+  clip-path: polygon(50% 75%, 100% 0, 100% 0, 50% 100%, 0 0, 0 0);
   animation: fadeinarrow 1s ease-in-out 6s 4 forwards;
   opacity: 0;
 }
